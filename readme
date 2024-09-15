@@ -1,0 +1,3 @@
+En la carpeta actual encontrará un archivo llamado "gestor_leon.sql", este archivo es de la base de datos del sistema, este archivo contiene datos de prueba y puede importar este archivo para usar el sistema.
+
+Por otra parte si se dirige a la ubicación: "procesos/databases/gestor_leon.sql" encontrará otro archivo de base de datos, este archivo es el original, por ende no tiene datos, puede importar este archivo pero deberá completar cierta información que es requerida para el funcionamiento del sistema.
