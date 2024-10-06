@@ -3,7 +3,7 @@
 <head>
 	<title>Login</title>
 	<link rel="shortcut icon" href="img/login.png">
-	<link rel="stylesheet" type="text/css" href="librerias/sweetalert/dist/sweetalert2-css.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
 
  ?>
 
-	<script src="librerias/sweetalert/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 	<script type="text/javascript">
 		Swal.fire({
 			position: 'bottom-end',

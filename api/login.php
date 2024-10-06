@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="librerias/bootstrap4/bootstrap-css.min.css">
-    <link rel="stylesheet" type="text/css" href="librerias/sweetalert/dist/sweetalert2-css.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body background="img/fondo_login.jpg">
 	<div class="wrapper fadeInDown">
@@ -35,7 +35,7 @@
     </div>
 
 <script src="librerias/jquery/jquery-3.6.0.min.js"></script>
-<script src="librerias/sweetalert/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 <script src="js/usuarios.js"></script>
 
 </body>
