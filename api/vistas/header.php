@@ -20,7 +20,7 @@
 	<script src="../librerias/jquery/jquery-latest.js"></script>
 	<script src="../librerias/jquery/jquery.min.js"></script>
 	<script src="../librerias/jquery/jquery-3.6.0.min.js"></script>
-	<script src="../librerias/jquery/jquery-ui-1.13.2.blue.light/jquery-ui.min.js"></script>
+	<script src="../librerias/jquery/jquery-ui-1.13.2.blue.light/jquery-ui-js.min.js"></script>
 	<script src="../librerias/bootstrap4/bootstrap.min.js"></script>
 </head>
 <body style="background-color: #e9ecef">
