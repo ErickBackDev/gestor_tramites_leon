@@ -1,5 +1,5 @@
 <?php 
-
+	header("Content-Type: text/html"); // Definir el encabezado para que funcione en el entorno de vercel
 	include 'inicio.php';
 
  ?>
