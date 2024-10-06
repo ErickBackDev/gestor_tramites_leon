@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="../img/folder2.png">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="../librerias/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../librerias/bootstrap4/bootstrap-css.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/perfil.css">
 	<link rel="stylesheet" type="text/css" href="../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../css/ellipsis.css">

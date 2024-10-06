@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="img/registro.png">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="librerias/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="librerias/bootstrap4/bootstrap-css.min.css">
 	<link rel="stylesheet" type="text/css" href="librerias/sweetalert/dist/sweetalert2-css.min.css">
 </head>
 <body>
