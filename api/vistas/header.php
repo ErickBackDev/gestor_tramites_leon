@@ -15,7 +15,7 @@
 	<link href="../librerias/fontawesome/css/brands.css" rel="stylesheet">
 	<link href="../librerias/fontawesome/css/solid.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../librerias/datatable/dataTables.bootstrap4.min.css">
-	<link rel="stylesheet" type="text/css" href="../librerias/sweetalert/dist/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="../librerias/sweetalert/dist/sweetalert2-css.min.css">
 	<link rel="stylesheet" type="text/css" href="../librerias/jquery/jquery-ui-1.13.2.blue.light/jquery-ui.min.css">
 	<script src="../librerias/jquery/jquery-latest.js"></script>
 	<script src="../librerias/jquery/jquery.min.js"></script>

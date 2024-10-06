@@ -3,7 +3,7 @@
 <head>
 	<title>Login</title>
 	<link rel="shortcut icon" href="img/login.png">
-	<link rel="stylesheet" type="text/css" href="librerias/sweetalert/dist/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="librerias/sweetalert/dist/sweetalert2-css.min.css">
 </head>
 <body>
 
