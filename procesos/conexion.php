@@ -1,16 +1,16 @@
 <?php
 
-require_once dirname(__DIR__) . '/vendor/autoload.php'; // Importar autoload absolutamente
+require_once dirname(__DIR__) . '/vendor/autoload.php'; // Import autoload absolutely
 
-// Cargar las variables de entorno solo en desarrollo
+// Load environment variables only in development
 if (getenv('APP_ENV') === 'development') {
-    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Carga desde la raíz
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Load from root
     $dotenv->load();
 }
 
-// Conectar a la base de datos usando variables de entorno
+// Connect to the database using environment variables
 if (getenv('APP_ENV') === 'production') {
-    // Conexión en producción
+    // Connection in production
     $conectar = mysqli_connect(
         getenv('DB_HOST'),
         getenv('DB_USER'),
@@ -18,7 +18,7 @@ if (getenv('APP_ENV') === 'production') {
         getenv('DB_NAME')
     );
 } else {
-    // Conexión en desarrollo
+    // Connection in development
     $conectar = mysqli_connect(
         $_ENV['DB_HOST'],
         $_ENV['DB_USER'],
@@ -27,7 +27,7 @@ if (getenv('APP_ENV') === 'production') {
     );
 }
 
-$conectar->set_charset('utf8mb4'); // Hacer que la base de datos reconozca caracteres especiales
+$conectar->set_charset('utf8mb4'); // Make the database recognize special characters
 
 if (!$conectar) {
     die("No se Pudo Conectar con el Servidor: " . mysqli_connect_error());
