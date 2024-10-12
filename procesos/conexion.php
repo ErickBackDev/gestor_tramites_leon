@@ -2,11 +2,9 @@
 
 require_once dirname(__DIR__) . '/vendor/autoload.php'; // Import autoload absolutely
 
-// Load environment variables only in development
-if (getenv('APP_ENV') === 'development') {
-    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Load from root
-    $dotenv->load();
-}
+// Load environment variables only in development. Comment this out in production
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Load from root
+$dotenv->load();
 
 // Connect to the database using environment variables
 if (getenv('APP_ENV') === 'production') {
