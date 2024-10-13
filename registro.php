@@ -68,16 +68,16 @@
 			<div class="row">
 				<div class="col-sm-3"></div>
 				<div class="col text-left">
-					<input class="btn btn-success" type="submit" value="Registrar">
+					<input class="btn btn-success" id="btnRegister" type="submit" value="Registrar">
 				</div>
 				<div class="col text-left">
-					<a href="login.php" class="btn btn-primary">Ingresar</a><br>
+					<a href="login.php" class="btn btn-primary" id="btnLogin">Ingresar</a><br>
 				</div>
 				<div class="col text-right">
-					<a href="inicio.php" class="btn btn-secondary">Volver</a><br>
+					<a href="inicio.php" class="btn btn-secondary" id="btnPrev">Volver</a><br>
 				</div>
 				<div class="col text-right">
-					<input class="btn btn-danger" type="reset" value="Limpiar">
+					<input class="btn btn-danger" id="btnReset" type="reset" value="Limpiar">
 				</div>
 				<div class="col-sm-3"></div>
 			</div>

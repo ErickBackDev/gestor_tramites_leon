@@ -1,4 +1,9 @@
 function registrar() {
+  const btnRegister = document.getElementById("btnRegister");
+  const btnLogin = document.getElementById("btnLogin");
+  const btnPrev = document.getElementById("btnPrev");
+  const btnReset = document.getElementById("btnReset");
+
   var formData = new FormData(document.getElementById("frmRegistro"));
   $.ajax({
     url: "procesos/usuarios/agregarUsuario.php",
@@ -8,8 +13,33 @@ function registrar() {
     cache: false,
     contentType: false,
     processData: false,
+    beforeSend: function () {
+      // Inhabilitar botones mientras se validan los datos
+      btnRegister.classList.remove("btn-success");
+      btnRegister.classList.add("btn-secondary");
+      btnRegister.disabled = true;
+      btnRegister.value = "Procesando...";
+
+      btnLogin.classList.add("disabled");
+      btnPrev.classList.add("disabled");
+
+      btnReset.classList.add("disabled");
+      btnReset.disabled = true;
+    },
     success: function (data) {
       data = data.trim();
+
+      // Habilitar botones despues de validar los datos
+      btnRegister.classList.remove("btn-secondary");
+      btnRegister.classList.add("btn-success");
+      btnRegister.disabled = false;
+      btnRegister.value = "Registrar";
+
+      btnLogin.classList.remove("disabled");
+      btnPrev.classList.remove("disabled");
+
+      btnReset.classList.remove("disabled");
+      btnReset.disabled = false;
 
       if (data == 1) {
         $("#frmRegistro")[0].reset();
