@@ -120,6 +120,15 @@ function registrar() {
             window.location.href = "login.php";
           }
         });
+      } else if (data == 8) {
+        $("#frmRegistro")[0].reset();
+        Swal.fire({
+          title: "Cargo no Seleccionado!",
+          text: "Debe seleccionar un cargo!",
+          icon: "error",
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+        });
       }
     },
   });
