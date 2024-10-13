@@ -10,6 +10,16 @@
 			<h1 class="display-4">Cargos</h1>
 			<b>Te recordamos que si eliminas un cargo que se encuentre asignado, todo aquel empleado que lo este ocupando será eliminado automaticamente.</b>
 			<hr>
+			<div class="text-center">
+				<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+					<div class="lds-simple-ellipsis">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
 			<div id="tablaCargos"></div>
 		</div>
 	</div>
@@ -57,7 +67,14 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#tablaCargos').load("empleados/tablaCargos.php");
+			// Make the loader visible
+			$('#simple-ellipsis').show();
+
+			// Load the table
+			$('#tablaCargos').load("empleados/tablaCargos.php", function() {
+				// Hide the loader after the table has been loaded
+				$('#simple-ellipsis').hide();
+			});
 		});
 	</script>
 

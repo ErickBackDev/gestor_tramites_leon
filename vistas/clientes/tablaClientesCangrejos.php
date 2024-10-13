@@ -46,7 +46,7 @@
 					<?php echo $row['correo']; ?>
 				</td>
 				<td class="col-sm-2">
-					<?php echo $row['codigoTel'];?> - <?php echo $row['telefono']; ?>
+					+<?php echo $row['codigoTel'] . " " . $row['telefono'];?>
 				</td>
 				<td class="col-sm-2" style="text-align: center;">
 					<?php if ($idCargoUser == 1) { ?>

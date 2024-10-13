@@ -17,6 +17,16 @@
 		<div class="container">
 			<h1 class="display-4">Empleados</h1>
 			<hr>
+			<div class="text-center">
+				<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+					<div class="lds-simple-ellipsis">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
 			<div id="tablaEmpleados"></div>
 		</div>
 	</div>
@@ -453,7 +463,15 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#tablaEmpleados').load("empleados/tablaEmpleados.php");
+			// Make the loader visible
+			$('#simple-ellipsis').show();
+
+			// Load the table
+			$('#tablaEmpleados').load("empleados/tablaEmpleados.php", function() {
+				// Hide the loader after the table has been loaded
+				$('#simple-ellipsis').hide();
+			});
+			
 			$('#codigoTelEdit').load("ubicaciones/codigosTelEdit.php");
 			$('#cargarCargos').load("empleados/selectCargo.php");
 		});

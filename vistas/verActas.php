@@ -10,6 +10,16 @@
 			<h1 class="display-4">Actas</h1>
 			<b>Te recordamos que si eliminas un acta que se encuentre en algún trámite, todo aquel cliente que este tramitando dicha acta será eliminado automaticamente.</b>
 			<hr>
+			<div class="text-center">
+				<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+					<div class="lds-simple-ellipsis">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
 			<div id="tablaActas"></div>
 		</div>
 	</div>
@@ -57,7 +67,14 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#tablaActas').load("clientes/tablaActas.php");
+			// Make the loader visible
+			$('#simple-ellipsis').show();
+
+			// Load the table
+			$('#tablaActas').load("clientes/tablaActas.php", function() {
+				// Hide the loader after the table has been loaded
+				$('#simple-ellipsis').hide();
+			});
 		});
 	</script>
 

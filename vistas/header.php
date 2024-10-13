@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/perfil.css">
 	<link rel="stylesheet" type="text/css" href="../css/buttons.css">
 	<link rel="stylesheet" type="text/css" href="../css/ellipsis.css">
+	<link rel="stylesheet" type="text/css" href="../css/simpleEllipsis.css">
 	<link rel="stylesheet" type="text/css" href="../css/regiones.css">
 	<link href="../librerias/fontawesome/css/fontawesome.css" rel="stylesheet">
 	<link href="../librerias/fontawesome/css/brands.css" rel="stylesheet">
@@ -141,9 +142,9 @@
 				<button onclick="myFunction()" class="dropbtn">Dropdown</button>
 			</div>
 			<div id="myDropdown" class="dropdown-content">
-				<a data-toggle="modal" data-target="#modalModificarPerfil" onclick="editarPerfil('<?php echo $usuario; ?>'); modalEditPerfil();"> <span class="fa-solid fa-user"></span> Editar Perfil</a>
+				<a href="#" data-toggle="modal" data-target="#modalModificarPerfil" onclick="editarPerfil('<?php echo $usuario; ?>'); modalEditPerfil();"> <span class="fa-solid fa-user"></span> Editar Perfil</a>
 				<?php if ($idCargoUser == 1) { ?>
-				<a data-toggle="modal" data-target="#modalModificarOtrosPerfiles" onclick="modalEditOtrosPerfiles();"> <span class="fa-solid fa-user"></span> Editar Otros Perfiles</a>
+				<a href="#" data-toggle="modal" data-target="#modalModificarOtrosPerfiles" onclick="modalEditOtrosPerfiles();"> <span class="fa-solid fa-user"></span> Editar Otros Perfiles</a>
 				<?php } ?>
 				<a href="../logout.php"> <span class="fas fa-power-off"></span> Salir</a>
 			</div>

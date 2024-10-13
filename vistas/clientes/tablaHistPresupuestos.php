@@ -8,7 +8,7 @@
 
 ?>
 
-	<button class="btn btn-primary m-2" id="convert-button">Actualizar Precio</button>
+	<span class="btn btn-primary mb-3" id="convert-button">Actualizar Precio</span>
 	<div class="table-responsive">
 		<table class="table table-striped table-hover table-primary" id="tablaPresupuestosDataTable">
 			<thead class="thead-dark">
