@@ -1,12 +1,6 @@
 <?php
 
-require_once dirname(__DIR__) . '/vendor/autoload.php'; // Import autoload absolutely
-
-// Load environment variables only in development. Comment this out in production
-$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Load from root
-$dotenv->load();
-
-// Connect to the database using environment variables
+// Connect to the database using environment variables in production
 if (getenv('APP_ENV') === 'production') {
     // Connection in production
     $conectar = mysqli_connect(
@@ -16,6 +10,12 @@ if (getenv('APP_ENV') === 'production') {
         getenv('DB_NAME')
     );
 } else {
+    require_once dirname(__DIR__) . '/vendor/autoload.php'; // Import autoload absolutely
+
+    // Load environment variables only in development
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__)); // Load from root
+    $dotenv->load();
+
     // Connection in development
     $conectar = mysqli_connect(
         $_ENV['DB_HOST'],
