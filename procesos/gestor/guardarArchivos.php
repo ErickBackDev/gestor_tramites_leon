@@ -11,7 +11,7 @@
 	$nr = mysqli_num_rows($carpeta);
 	
 	if(!$nr==1){
-		$sql = "INSERT INTO carpetas VALUES(NULL, '$id_cliente', 0, NULL)";
+		$sql = "INSERT INTO carpetas VALUES(NULL, '$id_cliente', 0, NOW())";
 		$ejecutar = mysqli_query($conectar,$sql);
 	}
 
