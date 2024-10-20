@@ -11,7 +11,7 @@
 	if($nr==1){
 		$data = $nr;
 	}else{
-		$sql="INSERT INTO actas VALUES(NULL, '$acta', NULL)";
+		$sql="INSERT INTO actas VALUES(NULL, '$acta', NOW())";
 		$ejecutar=mysqli_query($conectar,$sql);
 		if(!$ejecutar){
 			echo "Hubo Algun Error";
