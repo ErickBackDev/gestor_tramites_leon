@@ -115,7 +115,7 @@
 		if($nr2==1){
 			$data = 3;
 		}else{
-			$sql="INSERT INTO clientes VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$facebook', '$instagram', '$telegram', '$likedIn', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$n_actas', '$prioridad', NULL, 0, 0, 'En trámite')";
+			$sql="INSERT INTO clientes VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$facebook', '$instagram', '$telegram', '$likedIn', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$n_actas', '$prioridad', NOW(), 0, 0, 'En trámite')";
 			$ejecutar=mysqli_query($conectar,$sql);
 
 			if($ejecutar){
