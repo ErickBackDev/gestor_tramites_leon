@@ -12,7 +12,7 @@
 	if($nr==1){
 		$data = $nr;
 	}else{
-		$sql="INSERT INTO gastos VALUES(NULL, '$gasto', '$precio_dolar', NULL)";
+		$sql="INSERT INTO gastos VALUES(NULL, '$gasto', '$precio_dolar', NOW())";
 		$ejecutar=mysqli_query($conectar,$sql);
 		if(!$ejecutar){
 			echo "Hubo Algun Error";
