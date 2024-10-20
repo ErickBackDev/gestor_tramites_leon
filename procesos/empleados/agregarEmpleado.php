@@ -123,7 +123,7 @@
 					if($nr3==1){
 						$data = 4;
 					}else{
-						$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NULL)";
+						$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NOW())";
 						$ejecutar=mysqli_query($conectar,$sql);
 						if($ejecutar){
 							$asignar = "UPDATE cargos SET asignado = 1 WHERE id_cargo = $cargo";
@@ -142,7 +142,7 @@
 						if($nr4==1){
 							$data = 5;
 						}else{
-							$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NULL)";
+							$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NOW())";
 							$ejecutar=mysqli_query($conectar,$sql);
 							if($ejecutar){
 								$asignar = "UPDATE cargos SET asignado = 1 WHERE id_cargo = $cargo";
@@ -154,7 +154,7 @@
 							}
 						}
 					}else{
-						$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NULL)";
+						$sql="INSERT INTO empleados VALUES(NULL, '$cedula', '$rif', '$p_nombre', '$s_nombre', '$p_apellido', '$s_apellido', '$f_nacimiento', '$est_civil', '$sexo', '$paisNatal', '$estadoNatal', '$municipioNatal', '$parroquiaNatal', '$espNatal', '$codigoTel', '$telefono', '$correo', '$paisRes', '$estadoRes', '$municipioRes', '$parroquiaRes', '$direccion', '$profesion', '$exProfesional', '$exLaboral', '$cargo', NOW())";
 						$ejecutar=mysqli_query($conectar,$sql);
 						if($ejecutar){
 							$asignar = "UPDATE cargos SET asignado = 1 WHERE id_cargo = $cargo";
