@@ -58,6 +58,16 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-12">
+					<div class="text-center">
+						<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+							<div class="lds-simple-ellipsis">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
 					<div id="tablaClientes"></div>
 				</div>
 			</div>
@@ -824,9 +834,17 @@
 	<script type="text/javascript">
 
 		$(document).ready(function(){
+			// Make the loader visible
+			$('#simple-ellipsis').show();
+
+			// Load the table
+			$('#tablaClientes').load("clientes/tablaClientes.php", function() {
+				// Hide the loader after the table has been loaded
+				$('#simple-ellipsis').hide();
+			});
+
 			$('#codigoTel').load("ubicaciones/codigosTel.php");
 			$('#codigoTelEdit').load("ubicaciones/codigosTelEdit.php");
-			$('#tablaClientes').load("clientes/tablaClientes.php");
 			$('#cargarActas').load("clientes/selectActa.php");
 			$('#cargarActasEdit').load("clientes/selectActaEdit.php");
 			$('#cargarActasInfo').load("clientes/infoActa.php");

@@ -18,6 +18,16 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-12">
+					<div class="text-center">
+						<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+							<div class="lds-simple-ellipsis">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+					</div>
 					<div id="tablaPapelera"></div>
 				</div>
 			</div>
@@ -32,7 +42,14 @@
 <script src="../js/papelera.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#tablaPapelera').load("papelera/tablaPapelera.php");
+		// Make the loader visible
+		$('#simple-ellipsis').show();
+
+		// Load the table
+		$('#tablaPapelera').load("papelera/tablaPapelera.php", function() {
+			// Hide the loader after the table has been loaded
+			$('#simple-ellipsis').hide();
+		});
 	});
 </script>
 

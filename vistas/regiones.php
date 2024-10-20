@@ -32,6 +32,16 @@
                 <hr>
                 <div class="row">
                     <div class="col-sm-12">
+						<div class="text-center">
+							<div class="contenedor-simple-ellipsis" id="simple-ellipsis" style="display: none;">
+								<div class="lds-simple-ellipsis">
+									<div></div>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
                         <div id="tablaPaises"></div>
                     </div>
                 </div>
@@ -474,7 +484,15 @@
 	<script type="text/javascript">
 
 		$(document).ready(function(){
-			$('#tablaPaises').load("regiones/tablaPaises.php");
+			// Make the loader visible
+			$('#simple-ellipsis').show();
+
+			// Load the table
+			$('#tablaPaises').load("regiones/tablaPaises.php", function() {
+				// Hide the loader after the table has been loaded
+				$('#simple-ellipsis').hide();
+			});
+
 			$('#tablaEstados').load("regiones/tablaEstados.php");
             $('#tablaMunicipios').load("regiones/tablaMunicipios.php");
             $('#tablaParroquias').load("regiones/tablaParroquias.php");

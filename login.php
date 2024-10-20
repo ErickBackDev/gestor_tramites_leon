@@ -24,11 +24,11 @@
             <form id="frmLogin" method="POST" autocomplete="off" onsubmit="return ingresar()">
                 <input type="text" name="usuario" id="usuario" class="fadeIn second" placeholder="&#128100 Usuario" required="">
                 <input type="password" name="password" id="password" class="fadeIn third" placeholder="&#128273 Contraseña" required="">
-                <input type="submit" class="fadeIn fourth, btn btn-primary" value="Ingresar">
+                <input type="submit" id="btnLogin" class="fadeIn fourth, btn btn-primary" value="Ingresar">
                 <div id="formFooter">
-                    <a href="registro.php" class="btn btn-link">Registrarse</a>o
-                    <a class="btn btn-link" onclick="recovery()">Recuperar Contraseña</a><br>
-                    <a href="inicio.php" class="btn btn-secondary">Volver</a><br>
+                    <a href="registro.php" id="btnRegister" class="btn btn-link">Registrarse</a>o
+                    <a class="btn btn-link" id="btnResetPassword" onclick="recovery()">Recuperar Contraseña</a><br>
+                    <a href="inicio.php" id="btnPrev" class="btn btn-secondary">Volver</a><br>
                 </div>
             </form>        
         </div>
