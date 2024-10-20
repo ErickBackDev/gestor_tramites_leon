@@ -11,7 +11,7 @@
 	if($nr==1){
 		$data = $nr;
 	}else{
-		$sql="INSERT INTO cargos VALUES(NULL, '$cargo', NULL, 0)";
+		$sql="INSERT INTO cargos VALUES(NULL, '$cargo', NOW(), 0)";
 		$ejecutar=mysqli_query($conectar,$sql);
 		if(!$ejecutar){
 			echo "Hubo Algun Error";
